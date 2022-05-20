@@ -1,0 +1,19 @@
+{
+  "name": "note-system",
+  "version": "0.0.1",
+  "description": "tink notes",
+  "main": "index.js",
+  "authors": {
+    "name": "tink",
+    "email": ""
+  },
+  "repository": "/note-system",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
