@@ -28,9 +28,9 @@ module.exports = {
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: true,
     nav: nav,
-    // sidebar: sidebar,
+    sidebar: sidebar
     // sidebar: {
     //   '/pages/guide/': [
     //     {
@@ -54,79 +54,79 @@ module.exports = {
     //     }
     //   ]
     // }
-    sidebar: {
-      '/pages/config/': [
-        {
-          title: 'config',
-          children: [
-            {
-              path: 'a',
-              title: '快捷键',
-              id: 'config_1'
-            },
-            {
-              path: 'b',
-              title: '新的标题a',
-              id: 'config_2'
-            },
-            {
-              path: '',
-              title: 'no title',
-              id: 'config_3'
-            }
-          ]
-        }
-      ],
-      '/pages/guide/': [
-        {
-          title: 'guide',
-          children: [
-            {
-              path: 'a',
-              title: '你好呀',
-              id: 'guide_1'
-            },
-            {
-              path: 'b',
-              title: '你好呀b',
-              id: 'guide_2'
-            },
-            {
-              path: '',
-              title: 'no title',
-              id: 'guide_3'
-            },
-            {
-              path: 'using-vue',
-              title: 'using-vue',
-              id: 'guide_4'
-            }
-          ]
-        }
-      ],
-      '/pages/test/': [
-        {
-          title: 'test',
-          children: [
-            {
-              path: 'a',
-              title: '快捷键',
-              id: 'test_1'
-            },
-            {
-              path: 'b',
-              title: '新的标题a',
-              id: 'test_2'
-            },
-            {
-              path: '',
-              title: 'no title',
-              id: 'test_3'
-            }
-          ]
-        }
-      ]
-    }
+    // sidebar: {
+    //   '/pages/config/': [
+    //     {
+    //       title: 'config',
+    //       children: [
+    //         {
+    //           path: 'a',
+    //           title: '快捷键',
+    //           id: 'config_1'
+    //         },
+    //         {
+    //           path: 'b',
+    //           title: '新的标题a',
+    //           id: 'config_2'
+    //         },
+    //         {
+    //           path: '',
+    //           title: 'no title',
+    //           id: 'config_3'
+    //         }
+    //       ]
+    //     }
+    //   ],
+    //   '/pages/guide/': [
+    //     {
+    //       title: 'guide',
+    //       children: [
+    //         {
+    //           path: 'a',
+    //           title: '你好呀',
+    //           id: 'guide_1'
+    //         },
+    //         {
+    //           path: 'b',
+    //           title: '你好呀b',
+    //           id: 'guide_2'
+    //         },
+    //         {
+    //           path: '',
+    //           title: 'no title',
+    //           id: 'guide_3'
+    //         },
+    //         {
+    //           path: 'using-vue',
+    //           title: 'using-vue',
+    //           id: 'guide_4'
+    //         }
+    //       ]
+    //     }
+    //   ],
+    //   '/pages/test/': [
+    //     {
+    //       title: 'test',
+    //       children: [
+    //         {
+    //           path: 'a',
+    //           title: '快捷键',
+    //           id: 'test_1'
+    //         },
+    //         {
+    //           path: 'b',
+    //           title: '新的标题a',
+    //           id: 'test_2'
+    //         },
+    //         {
+    //           path: '',
+    //           title: 'no title',
+    //           id: 'test_3'
+    //         }
+    //       ]
+    //     }
+    //   ]
+    // }
   },
 
   /**

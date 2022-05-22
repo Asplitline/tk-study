@@ -14,15 +14,7 @@ const nav = [
   },
   {
     text: '文档学习',
-    items: [
-      { text: 'Flutter 小记', link: '/flutter-guide/' },
-      { text: '前端工程化', link: '/frontend-engineering/' },
-      { text: 'Node 实践', link: '/node/' },
-      { text: 'Web 性能优化', link: '/web-performance/' },
-      { text: '有可能你并不需要服务器', link: '/no-vps/' },
-      { text: 'Docker 个人服务器运维', link: '/op/' },
-      { text: 'Kubernetes 服务器集群运维', link: '/k8s/' }
-    ]
+    items: [{ text: 'Vue2', link: '/docs/vue2' }]
   }
   // {
   //   text: 'VuePress',
