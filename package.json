@@ -9,11 +9,16 @@
   },
   "repository": "/note-system",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "serve": "vuepress dev src",
+    "dev": "vuepress dev src --temp .temp",
+    "build": "vuepress build src",
+    "dev:config": "nodemon ./src/config/index.js",
+    "dev:lib": "nodemon ./src/lib/index.js"
   },
   "license": "MIT",
   "devDependencies": {
+    "grey-matter": "^0.0.0",
+    "nodemon": "^2.0.16",
     "vuepress": "^1.5.3"
   }
 }

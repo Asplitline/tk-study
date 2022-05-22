@@ -1,5 +1,6 @@
-const navList = require('./nav')
-
+const nav = require('./nav')
+const sidebar = require('./sidebar')
 module.exports = {
-  navList
+  nav,
+  sidebar
 }

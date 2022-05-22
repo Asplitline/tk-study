@@ -1,14 +1,8 @@
 const { pages_dir } = require('../lib/static')
-const file = require('fs')
+const { getPages, getPage, handlePages } = require('../lib/pages')
 
-const sidebar = {
-  '/guide/': [
-    {
-      title: 'Guide',
-      collapsable: false,
-      children: ['', 'using-vue']
-    }
-  ]
-}
+const pages = getPages()
+const sidebar = handlePages(pages)
 
-export default sidebar
+console.log(JSON.stringify(sidebar))
+module.exports = sidebar

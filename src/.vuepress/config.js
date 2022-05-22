@@ -1,18 +1,11 @@
 // const { description } = require('../../package')
 // console.log(description)
 // import { navList } from './config'
-const { navList } = require('../config')
+const { nav, sidebar } = require('../config')
 
 module.exports = {
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
-  title: 'Vuepress Docs Boilerplate',
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
+  title: 'Tk Docs',
   description: 'my notes',
-
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
@@ -23,27 +16,114 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
-
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
-
   base: '',
+  sidebarDepth: 2,
   themeConfig: {
     repo: '',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    nav: navList,
+    nav: nav,
+    // sidebar: sidebar,
+    // sidebar: {
+    //   '/pages/guide/': [
+    //     {
+    //       title: 'Guide',
+    //       collapsable: false,
+    //       children: ['a', 'b']
+    //     }
+    //   ],
+    //   '/pages/config/': [
+    //     {
+    //       title: 'Config',
+    //       collapsable: false,
+    //       children: ['a', 'b']
+    //     }
+    //   ],
+    //   '/pages/test/': [
+    //     {
+    //       title: 'Config',
+    //       collapsable: false,
+    //       children: ['a', 'b']
+    //     }
+    //   ]
+    // }
     sidebar: {
-      '/guide/': [
+      '/pages/config/': [
         {
-          title: 'Guide',
-          collapsable: false,
-          children: ['', 'using-vue']
+          title: 'config',
+          children: [
+            {
+              path: 'a',
+              title: '快捷键',
+              id: 'config_1'
+            },
+            {
+              path: 'b',
+              title: '新的标题a',
+              id: 'config_2'
+            },
+            {
+              path: '',
+              title: 'no title',
+              id: 'config_3'
+            }
+          ]
+        }
+      ],
+      '/pages/guide/': [
+        {
+          title: 'guide',
+          children: [
+            {
+              path: 'a',
+              title: '你好呀',
+              id: 'guide_1'
+            },
+            {
+              path: 'b',
+              title: '你好呀b',
+              id: 'guide_2'
+            },
+            {
+              path: '',
+              title: 'no title',
+              id: 'guide_3'
+            },
+            {
+              path: 'using-vue',
+              title: 'using-vue',
+              id: 'guide_4'
+            }
+          ]
+        }
+      ],
+      '/pages/test/': [
+        {
+          title: 'test',
+          children: [
+            {
+              path: 'a',
+              title: '快捷键',
+              id: 'test_1'
+            },
+            {
+              path: 'b',
+              title: '新的标题a',
+              id: 'test_2'
+            },
+            {
+              path: '',
+              title: 'no title',
+              id: 'test_3'
+            }
+          ]
         }
       ]
     }
